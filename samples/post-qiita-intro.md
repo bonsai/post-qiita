@@ -68,6 +68,10 @@ tags: [Qiita, CLI, 自動化]
 
 娘「そういうこと😉 ちなみにこの記事も post-qiita で投稿してる」
 
+父「ソースは？」
+
+娘「GitHub で公開してるよ → https://github.com/bonsai/post-qiita」
+
 父「自分で自分を紹介してるのか」
 
 娘「そういう時代だね😎」
