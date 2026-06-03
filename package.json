@@ -1,0 +1,10 @@
+{
+  "name": "post-qiita",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "draft": "node qiita_post.mjs samples/qiita_test_article.md --draft",
+    "publish": "node qiita_post.mjs samples/qiita_test_article.md"
+  }
+}
