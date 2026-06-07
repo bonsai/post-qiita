@@ -20,7 +20,11 @@ import { resolve, basename } from 'path';
 
 // ── 環境変数読み込み ──────────────────────────────────────────────
 function loadEnv() {
-  const envPath = resolve(import.meta.dirname ?? '.', '.env.qiita');
+  const dir = import.meta.dirname ?? '.';
+  let envPath = resolve(dir, '.env.qiita');
+  if (!existsSync(envPath)) {
+    envPath = resolve(dir, '..', '.env.qiita');
+  }
   if (!existsSync(envPath)) {
     console.error('❌ .env.qiita が見つかりません\n');
     console.error('セットアップ手順:');
